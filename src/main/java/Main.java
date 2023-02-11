@@ -9,7 +9,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         //Выводим на экран сообщение
-        System.out.println("Введите n:");
+        System.out.println("Input n:");
         //Проверяем, введено ли с клавиатуры целое число
         //Если да, то выполняем этот блок
         //Если нет, то выводим сообщение об ошибке
@@ -37,10 +37,10 @@ public class Main {
             }
 
             //выводим результат
-            System.out.println(result);
+            System.out.println("Result: " + result);
 
         } else {
-            System.out.println("Вы ввели не целое число");
+            System.out.println("Invalid number");
         }
 
     }
