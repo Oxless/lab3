@@ -29,7 +29,7 @@ public class Main {
                 System.out.println("Результат: " + result);
 
             } else {
-                System.out.println("Вы ввели не целое число (Integer)");
+                System.out.println("Введите целое число");
                 scanner.next();
             }
             System.out.println();
@@ -49,7 +49,7 @@ public class Main {
     }
 
     /**
-     * Рассчитывает значение по формуле n - n/2 + n/3 -n/4 + ... + n/9999 - n/10000
+     * Рассчитывает значение по формуле n - n/2 + n/3 - n/4 + ... + n/9999 - n/10000
      * @param n - вводимый числитель
      * @return результат расчета
      */
