@@ -35,12 +35,8 @@ public class Main {
             // вводим строку с клавы
             String input = scanner.nextLine();
 
-            // если строка соответствует регулярному выражению, то сообщаем об этом
-            if(Pattern.matches(REGEX, input)) {
-                System.out.println("Строка " + input + " является шестнадцатеричным цветом");
-            } else {
-                System.out.println("Строка " + input + " не является шестнадцатеричным цветом");
-            }
+            checkInputString(input);
+
             System.out.println();
             System.out.println("Введите 0, чтобы выполнить программу еще раз");
             System.out.println("Введите любой другой символ, чтобы завершить программу");
@@ -53,6 +49,19 @@ public class Main {
             }
         }
 
+    }
+
+    /**
+     * Проверяет, является ли введенная строка шестнадцатеричным цветом и выводит результат на экран
+     * @param input - введенная строка
+     */
+    private static void checkInputString(String input) {
+        // если строка соответствует регулярному выражению, то сообщаем об этом
+        if(Pattern.matches(REGEX, input)) {
+            System.out.println("Строка " + input + " является шестнадцатеричным цветом");
+        } else {
+            System.out.println("Строка " + input + " не является шестнадцатеричным цветом");
+        }
     }
 
 }
