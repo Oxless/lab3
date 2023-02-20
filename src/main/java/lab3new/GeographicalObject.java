@@ -1,5 +1,6 @@
 package lab3new;
 
+//географический объект
 public class GeographicalObject {
 
     private String name = "unknown"; //название
@@ -8,10 +9,12 @@ public class GeographicalObject {
     private double latitude; //широта
     private double longitude; //долгота
 
+    //геттер для поля "название"
     public String getName() {
         return name;
     }
 
+    //сеттер для поля "название"
     public void setName(String name) {
         this.name = name;
     }

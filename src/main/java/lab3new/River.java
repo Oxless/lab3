@@ -2,6 +2,8 @@ package lab3new;
 
 import java.util.Arrays;
 
+//аналогично как с водоемом
+//река наследник класса "водоем", значит у него будут поля и методы водоема и географического объекта
 public class River extends Water {
 
     private double flowRate; //скорость течения
