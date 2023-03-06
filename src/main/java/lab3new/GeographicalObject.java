@@ -9,12 +9,12 @@ public class GeographicalObject {
     private double latitude; //широта
     private double longitude; //долгота
 
-    //геттер для поля "название"
+    // геттер (возвращает значение)
     public String getName() {
         return name;
     }
 
-    //сеттер для поля "название"
+    // сеттер (устанавливает значение)
     public void setName(String name) {
         this.name = name;
     }
